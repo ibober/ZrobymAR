@@ -1755,7 +1755,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 3
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -1770,7 +1770,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 339663560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 393671588}
+        m_MethodName: ModuleAdd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1236000148}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &339663560
@@ -1786,7 +1808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1794,8 +1816,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
@@ -2091,6 +2113,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 393671587}
   - 114: {fileID: 393671586}
+  - 114: {fileID: 393671588}
   m_Layer: 10
   m_Name: ARRoot
   m_TagString: Untagged
@@ -2129,6 +2152,17 @@ Transform:
   - {fileID: 811762312}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &393671588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 393671585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 613f61be4b6bab3498b7f1c6372cc361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &395405724
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,7 +5171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secondsToRemainVisible: 0
   eventReceiver: {fileID: 0}
-  _markerTag: 
+  _markerTag: smuga
 --- !u!1 &816222943
 GameObject:
   m_ObjectHideFlags: 0
@@ -7274,7 +7308,7 @@ GameObject:
   - 114: {fileID: 1236000151}
   - 114: {fileID: 1236000152}
   m_Layer: 8
-  m_Name: ARToolKit
+  m_Name: ARToolKitController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7306,7 +7340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseNativeGLTexturingIfAvailable: 0
   AllowNonRGBVideo: 0
-  QuitOnEscOrBack: 0
+  QuitOnEscOrBack: 1
   AutoStartAR: 1
   videoCParamName0: camera_para
   videoConfigurationWindows0: -showDialog -flipV
@@ -9233,7 +9267,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
