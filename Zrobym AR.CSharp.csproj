@@ -78,6 +78,7 @@
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARTransitionalCamera.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARUtilityFunctions.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\PluginFunctions.cs" />
+    <Compile Include="Assets\Scripts\AutoRotate.cs" />
     <Compile Include="Assets\Scripts\ZrobymHouseResize.cs" />
     <Compile Include="Assets\Scripts\ZrobymMarkersEvent.cs" />
   </ItemGroup>
