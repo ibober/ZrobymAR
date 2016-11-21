@@ -11,7 +11,7 @@ PluginImporter:
     Android:
       enabled: 0
       settings:
-        CPU: x86
+        CPU: AnyCPU
     Any:
       enabled: 1
       settings: {}
@@ -53,14 +53,6 @@ PluginImporter:
       enabled: 1
       settings:
         CPU: AnyCPU
-    WindowsStoreApps:
-      enabled: 0
-      settings:
-        CPU: ARM
-        DontProcess: False
-        PlaceholderPath: 
-        SDK: PhoneSDK81
-        ScriptingBackend: DotNet
     iOS:
       enabled: 0
       settings:
