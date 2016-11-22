@@ -76,10 +76,12 @@
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARUtilityFunctions.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\PluginFunctions.cs" />
     <Compile Include="Assets\Scripts\AutoRotate.cs" />
-    <Compile Include="Assets\Scripts\HideSplash.cs" />
+    <Compile Include="Assets\Scripts\InfoScript.cs" />
+    <Compile Include="Assets\Scripts\LoadScean.cs" />
     <Compile Include="Assets\Scripts\ModuleControl.cs" />
     <Compile Include="Assets\Scripts\ModuleList.cs" />
-    <Compile Include="Assets\Scripts\SwitchToARScene.cs" />
+    <Compile Include="Assets\Scripts\SplashShowCompanyAndGoAR.cs" />
+    <Compile Include="Assets\Scripts\TemporaryLogo.cs" />
     <Compile Include="Assets\Scripts\ZrobymHouseResize.cs" />
     <Compile Include="Assets\Scripts\ZrobymMarkersEvent.cs" />
   </ItemGroup>

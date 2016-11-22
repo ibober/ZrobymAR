@@ -2798,6 +2798,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1113350614}
   m_Mesh: {fileID: 4300000, guid: a86bf38afd4a98743a1e0490201747bf, type: 3}
+--- !u!1 &1196975333 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100024, guid: 136cb8d65d6c8ae408a710fcc9168ed5, type: 3}
+  m_PrefabInternal: {fileID: 191654193}
 --- !u!1 &1236000148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,7 +2845,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1236000148}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe4ec33cee90c844ea1bcc2cd642033e, type: 3}
   m_Name: 
@@ -5139,7 +5143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   houseList:
-  - {fileID: 0}
+  - {fileID: 1196975333}
   - {fileID: 964786479}
 --- !u!1 &1956263003
 GameObject:
