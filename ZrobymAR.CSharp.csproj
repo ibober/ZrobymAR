@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\AutoRotate.cs" />
     <Compile Include="Assets\Scripts\InfoScript.cs" />
     <Compile Include="Assets\Scripts\LoadScean.cs" />
+    <Compile Include="Assets\Scripts\ModuleAnimation.cs" />
     <Compile Include="Assets\Scripts\ModuleControl.cs" />
     <Compile Include="Assets\Scripts\ModuleList.cs" />
     <Compile Include="Assets\Scripts\SplashShowCompanyAndGoAR.cs" />
