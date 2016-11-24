@@ -5,10 +5,24 @@ using UnityEngine.UI;
 public class InfoScript : MonoBehaviour
 {
     public Image InfoImage;
+    //private bool isActive;
+
+    //void Start()
+    //{
+    //    isActive = InfoImage.gameObject.activeSelf;
+    //}
 
 	public void ShowInfoScreen ()
 	{
-        //why the hell it doen't work??
-        InfoImage.enabled = !InfoImage.enabled;
-    }
+	    if (!InfoImage.gameObject.activeSelf)
+	    {
+	        InfoImage.gameObject.SetActive(true);
+	    }
+	    else
+	    {
+	        InfoImage.gameObject.SetActive(false);
+        }
+        //isActive = !isActive;
+	    //InfoImage.gameObject.SetActive(isActive);
+	}
 }
