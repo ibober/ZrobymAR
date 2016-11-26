@@ -76,6 +76,8 @@
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARUtilityFunctions.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\PluginFunctions.cs" />
     <Compile Include="Assets\Scripts\AutoRotate.cs" />
+    <Compile Include="Assets\Scripts\GoWebMH.cs" />
+    <Compile Include="Assets\Scripts\GoWebZA.cs" />
     <Compile Include="Assets\Scripts\InfoScript.cs" />
     <Compile Include="Assets\Scripts\LoadScean.cs" />
     <Compile Include="Assets\Scripts\ModuleAnimation.cs" />
