@@ -11,11 +11,11 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: AKA Environments
-  productName: Zrobym AR
+  productName: Modular House
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenStyle: 0
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_VirtualRealitySplashScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -362,14 +362,14 @@ PlayerSettings:
   scriptingDefineSymbols:
     1: 
     2: 
-  metroPackageName: ZrobymAR
+  metroPackageName: ModularHouse
   metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: My Company
   metroCertificateIssuer: My Company
   metroCertificateNotAfter: 0088e027fc4dd301
-  metroApplicationDescription: Modular houses catalogue
+  metroApplicationDescription: Zrobym architects modular houses catalogue
   wsaImages: {}
   metroTileShortName: Zrobym AR
   metroCommandLineArgsFile: 
