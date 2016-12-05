@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GoWebMH : MonoBehaviour {
+public class GoWebMH : MonoBehaviour
+{
+    public string URL = "http://modular-house.by/";
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public void GoWeb()
+    {
+        Application.OpenURL(URL);
+    }
 }

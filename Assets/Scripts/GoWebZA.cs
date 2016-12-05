@@ -3,9 +3,10 @@ using System.Collections;
 
 public class GoWebZA : MonoBehaviour
 {
-	public void VisitZAWebPage ()
-	{
-        Debug.Log("GO WEB");
-        //open browser "http://zrobym.by/"
+    public string URL = "http://zrobym.by/";
+
+    public void GoWeb()
+    {
+        Application.OpenURL(URL);
     }
 }

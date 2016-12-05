@@ -5,24 +5,26 @@ using UnityEngine.UI;
 public class InfoScript : MonoBehaviour
 {
     public Image InfoImage;
-    //private bool isActive;
+    public Button InfoButton;
+    public Sprite InfoSprite;
+    public Sprite InfoCloseSprite;
 
-    //void Start()
-    //{
-    //    isActive = InfoImage.gameObject.activeSelf;
-    //}
+    void Start()
+    {
+        InfoButton.image.sprite = InfoSprite;
+    }
 
 	public void ShowInfoScreen ()
 	{
 	    if (!InfoImage.gameObject.activeSelf)
 	    {
 	        InfoImage.gameObject.SetActive(true);
-	    }
-	    else
+            InfoButton.image.sprite = InfoCloseSprite;
+        }
+        else
 	    {
 	        InfoImage.gameObject.SetActive(false);
+            InfoButton.image.sprite = InfoSprite;
         }
-        //isActive = !isActive;
-	    //InfoImage.gameObject.SetActive(isActive);
-	}
+    }
 }
