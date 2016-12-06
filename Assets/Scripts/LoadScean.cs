@@ -6,12 +6,19 @@ public class LoadScean : MonoBehaviour {
 
     public bool animationEnd;
 	
-	// Update is called once per frame
 	void Update () {
-	
+
         if (animationEnd)
         {
-            SceneManager.LoadScene("AugmentedReality");
+            StartCoroutine("LoadScene");
+            //SceneManager.LoadSceneAsync("AugmentedReality");
         }
 	}
+
+    IEnumerator LoadScene()
+    {
+        yield return null;
+        SceneManager.LoadSceneAsync("AugmentedReality");
+
+    }
 }
