@@ -1,24 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadScean : MonoBehaviour {
 
     public bool animationEnd;
-	
-	void Update () {
+    public float SplashTime = 5.0f;
+    public Image SplashPanel;
+    public Image SplashLogo;
+
+    void Update () {
 
         if (animationEnd)
         {
-            StartCoroutine("LoadScene");
+            Invoke("FinishAnimatedLogo", SplashTime);
+            //StartCoroutine("FinishAnimatedLogo");
             //SceneManager.LoadSceneAsync("AugmentedReality");
         }
 	}
 
-    IEnumerator LoadScene()
+    /*IEnumerator*/void FinishAnimatedLogo()
     {
-        yield return null;
-        SceneManager.LoadSceneAsync("AugmentedReality");
-
+        //yield return null;
+        Destroy(SplashPanel);
+        Destroy(SplashLogo);
     }
 }
