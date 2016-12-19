@@ -30,7 +30,7 @@ PlayerSettings:
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
-  displayResolutionDialog: 1
+  displayResolutionDialog: 0
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
@@ -39,7 +39,7 @@ PlayerSettings:
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
   disableDepthAndStencilBuffers: 0
-  defaultIsFullScreen: 0
+  defaultIsFullScreen: 1
   defaultIsNativeResolution: 1
   runInBackground: 1
   captureSingleScreen: 0
@@ -362,6 +362,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     1: 
     2: 
+    7: 
   metroPackageName: ModularHouse
   metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets/WSATestCertificate.pfx
