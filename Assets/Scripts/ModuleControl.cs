@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
 public class ModuleControl : MonoBehaviour
 {
-
     public List<GameObject> houseList = new List<GameObject>();
-
+    public Toggle ZoomButton;
+    public float ZoomFactor = 1.5f;
 
     public void ModuleAdd()
     {
@@ -45,7 +46,24 @@ public class ModuleControl : MonoBehaviour
                         break;
                     }
                 }
+            }
+        }
+    }
 
+    public void ModuleMagnify()
+    {
+        foreach (GameObject activeHouse in houseList)
+        {
+            if (activeHouse.activeSelf)
+            {
+                if (!ZoomButton.isOn)
+                {
+                    activeHouse.transform.localScale *= ZoomFactor;
+                }
+                else
+                {
+                    activeHouse.transform.localScale /= ZoomFactor;
+                }
             }
         }
     }
