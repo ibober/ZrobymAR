@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZrobymAR.CSharp", "ZrobymAR.CSharp.csproj", "{75F7A65E-6D24-5238-A1EA-0C52E3BC00C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZrobymAR", "ZrobymAR.csproj", "{11BA71BE-134A-3CDE-CBA1-B35EDA9504BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZrobymAR.CSharp.Editor", "ZrobymAR.CSharp.Editor.csproj", "{2197F80C-E640-9113-9C2B-6A2583EFA17C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZrobymAR.Editor", "ZrobymAR.Editor.csproj", "{F63E43E0-0EB2-0E71-7999-7B2877ADFAEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{75F7A65E-6D24-5238-A1EA-0C52E3BC00C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75F7A65E-6D24-5238-A1EA-0C52E3BC00C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75F7A65E-6D24-5238-A1EA-0C52E3BC00C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75F7A65E-6D24-5238-A1EA-0C52E3BC00C5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2197F80C-E640-9113-9C2B-6A2583EFA17C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2197F80C-E640-9113-9C2B-6A2583EFA17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2197F80C-E640-9113-9C2B-6A2583EFA17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2197F80C-E640-9113-9C2B-6A2583EFA17C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BA71BE-134A-3CDE-CBA1-B35EDA9504BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BA71BE-134A-3CDE-CBA1-B35EDA9504BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BA71BE-134A-3CDE-CBA1-B35EDA9504BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BA71BE-134A-3CDE-CBA1-B35EDA9504BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F63E43E0-0EB2-0E71-7999-7B2877ADFAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F63E43E0-0EB2-0E71-7999-7B2877ADFAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F63E43E0-0EB2-0E71-7999-7B2877ADFAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F63E43E0-0EB2-0E71-7999-7B2877ADFAEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -672,10 +672,14 @@ public class ARController : MonoBehaviour
                     float[] projRaw = new float[16];
                     PluginFunctions.arwGetProjectionMatrix(projRaw);
                     _videoProjectionMatrix0 = ARUtilityFunctions.MatrixFromFloatArray(projRaw);
-                    Log(LogTag + "Projection matrix: [" + Environment.NewLine + _videoProjectionMatrix0.ToString().Trim() + "]");
-                    if (ContentRotate90) _videoProjectionMatrix0 = Matrix4x4.TRS(Vector3.zero, Quaternion.AngleAxis(90.0f, Vector3.back), Vector3.one) * _videoProjectionMatrix0;
-                    if (ContentFlipV) _videoProjectionMatrix0 = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(1.0f, -1.0f, 1.0f)) * _videoProjectionMatrix0;
-                    if (ContentFlipH) _videoProjectionMatrix0 = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(-1.0f, 1.0f, 1.0f)) * _videoProjectionMatrix0;
+
+                    Vector3 sourceOffset = Vector3.zero*-1.0f;
+                    
+
+                        Log(LogTag + "Projection matrix: [" + Environment.NewLine + _videoProjectionMatrix0.ToString().Trim() + "]");
+                    if (ContentRotate90) _videoProjectionMatrix0 = Matrix4x4.TRS(sourceOffset, Quaternion.AngleAxis(90.0f, Vector3.back), Vector3.one) * _videoProjectionMatrix0;
+                    if (ContentFlipV) _videoProjectionMatrix0 = Matrix4x4.TRS(sourceOffset, Quaternion.identity, new Vector3(1.0f, -1.0f, 1.0f)) * _videoProjectionMatrix0;
+                    if (ContentFlipH) _videoProjectionMatrix0 = Matrix4x4.TRS(sourceOffset, Quaternion.identity, new Vector3(-1.0f, 1.0f, 1.0f)) * _videoProjectionMatrix0;
 
                     _videoBackgroundMeshGO0 = CreateVideoBackgroundMesh(0, _videoWidth0, _videoHeight0, BackgroundLayer0, out _videoColorArray0, out _videoColor32Array0, out _videoTexture0, out _videoMaterial0);
                     if (_videoBackgroundMeshGO0 == null || _videoTexture0 == null || _videoMaterial0 == null) {
@@ -1609,12 +1613,12 @@ public class ARController : MonoBehaviour
         m.Clear();
 
         float r = 1.0f;
-
+        Vector3 offset = Vector3.zero * -1.0f;
         m.vertices = new Vector3[] { 
-                new Vector3(-r, -r, 0.5f), 
-                new Vector3( r, -r, 0.5f), 
-                new Vector3( r,  r, 0.5f),
-                new Vector3(-r,  r, 0.5f),
+                new Vector3(-r, -r, 0.5f)+offset, 
+                new Vector3( r, -r, 0.5f)+offset, 
+                new Vector3( r,  r, 0.5f)+offset,
+                new Vector3(-r,  r, 0.5f)+offset,
             };
 
         m.normals = new Vector3[] { 
