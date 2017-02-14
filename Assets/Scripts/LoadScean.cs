@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoadScean : MonoBehaviour {
@@ -10,6 +8,14 @@ public class LoadScean : MonoBehaviour {
     public Image SplashPanel;
     public Image SplashLogo;
     public GameObject ArControllerGameObject;
+
+    void Start()
+    {
+        //hope this will help to eliminate square camera on start...
+        ARToolkitHelper.OpenCamera();
+        ARToolkitHelper.StartCapture();
+        ArControllerGameObject.GetComponent<ARController>().StartAR(); //replace from here
+    }
 
     void Update () {
 
@@ -27,7 +33,7 @@ public class LoadScean : MonoBehaviour {
     /*IEnumerator*/void FinishAnimatedLogo()
     {
         //yield return null;
-        ArControllerGameObject.GetComponent<ARController>().StartAR();
+        //ArControllerGameObject.GetComponent<ARController>().StartAR();
         Destroy(SplashPanel);
         Destroy(SplashLogo);
     }

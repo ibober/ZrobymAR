@@ -11,6 +11,7 @@ public class InfoScript : MonoBehaviour
     public Button AddButton;
     public Button RemButton;
     public Button LnkButton;
+    public Toggle ZoomButton;
 
     void Start()
     {
@@ -26,6 +27,7 @@ public class InfoScript : MonoBehaviour
 	        AddButton.interactable = false;
             RemButton.interactable = false;
             LnkButton.interactable = false;
+            ZoomButton.interactable = false;
         }
         else
 	    {
@@ -34,6 +36,7 @@ public class InfoScript : MonoBehaviour
             AddButton.interactable = true;
             RemButton.interactable = true;
             LnkButton.interactable = true;
+            ZoomButton.interactable = true;
         }
     }
 }

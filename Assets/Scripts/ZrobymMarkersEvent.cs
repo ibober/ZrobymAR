@@ -8,4 +8,5 @@ public class ZrobymMarkersEvent : MonoBehaviour {
     //To handle these events, implement the matching event handler in a script, and attach it to the ARCamera. 
     //void OnMarkerLost(ARMarker marker)
     //void OnMarkerFound(ARMarker marker)
+    //http://augmentmy.world/marker-detection-unity3d
 }

@@ -56,7 +56,7 @@ public class ModuleControl : MonoBehaviour
         {
             if (activeHouse.activeSelf)
             {
-                if (!ZoomButton.isOn)
+                if (ZoomButton.isOn)
                 {
                     activeHouse.transform.localScale *= ZoomFactor;
                 }

@@ -73,11 +73,13 @@
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARNativePluginStatic.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\AROrigin.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARPattern.cs" />
+    <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARToolkitHelper.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARTrackedCamera.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARTrackedObject.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARTransitionalCamera.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARUtilityFunctions.cs" />
     <Compile Include="Assets\ARToolKit5-Unity\Scripts\PluginFunctions.cs" />
+    <Compile Include="Assets\Scripts\AndroidSquareCamElimination.cs" />
     <Compile Include="Assets\Scripts\AutoRotate.cs" />
     <Compile Include="Assets\Scripts\GoWebMH.cs" />
     <Compile Include="Assets\Scripts\GoWebZA.cs" />
