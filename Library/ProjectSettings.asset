@@ -169,7 +169,7 @@ PlayerSettings:
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: C:/Users/ibobe/Documents/GitHub/Zrobym AR/Builds/Android/firstApp.keystore
   AndroidKeyaliasName: firstapp
-  AndroidTVCompatibility: 1
+  AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 0
   m_AndroidBanners:
